@@ -1,82 +1,68 @@
-# Example app with styled-components
+<img src="https://firebasestorage.googleapis.com/v0/b/teste-upload-b324a.appspot.com/o/Logo-Wine-990x640.jpeg?alt=media&token=d07a516f-6880-4c8c-8dea-723f36687d95" alt="alt text" width="100%" height="whatever">
 
-This example features how you use a different styling solution than [styled-jsx](https://github.com/vercel/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
 
-This example uses the Rust-based [SWC](https://nextjs.org/docs/advanced-features/compiler#styled-components) in Next.js for better performance than Babel.
+# 🚀 Front end challenge
 
-Currently, only the `ssr` and `displayName` transforms have been implemented. These two transforms are the main requirement for using `styled-components` in Next.js.
+Bem-vindo(a). Este é o desafio Front end!
 
-## Deploy your own
+O objetivo deste desafio é avaliar suas habilidades de programação.
+Quando sua solução estiver pronta, basta responder o e-mail que recebeu com o link do seu repo aqui no Github!
+Em seguida, enviaremos o feedback e as instruções dos próximos passos!
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-styled-components)
+Caso tenha alguma dúvida, nós estamos disponíveis no email *alexsander@wine.com.br*
+Bom desafio!
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-styled-components&project-name=with-styled-components&repository-name=with-styled-components)
+> ⚠️ **É importante que o seu repo esteja público, caso contrário não iremos conseguir avaliar sua resposta**
 
-## How to use
+# 🧠 Contexto
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+![Protótipo](https://firebasestorage.googleapis.com/v0/b/teste-upload-b324a.appspot.com/o/Captura%20de%20Tela%202021-11-01%20a%CC%80s%2014.44.04.png?alt=media&token=92acea99-9f2d-46b5-bced-4b384acf808f)
 
-```bash
-npx create-next-app --example with-styled-components with-styled-components-app
-# or
-yarn create next-app --example with-styled-components with-styled-components-app
-# or
-pnpm create next-app --example with-styled-components with-styled-components-app
-```
+O desafio será implementar um e-commerce para venda de vinhos que deverá ter as seguintes funcionalidades:
+- [ ] Catálogo de produtos com paginação
+- [ ] Filtragem produtos por preço
+- [ ] Busca por nome do produto
+- [ ] Adicionar e remover produtos do carrinho
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+## 📋 Instruções ReactJS
 
-### Try it on CodeSandbox
+Chegou a hora de colocar a mão na massa!
 
-[Open this example on CodeSandbox](https://codesandbox.io/s/github/vercel/next.js/tree/canary/examples/with-styled-components)
+- Siga [esse protótipo](https://www.figma.com/file/gByBxI9GBHKUjXRtO2fFh2/28%2F10-%F0%9F%96%A5-%F0%9F%93%B1---Wine-Test---WEB-%26-APP?node-id=680%3A6449)
+- Utilize Next.js e Typescript
+- Faça a estilização com styled-components
+- Utilize o local storage para gerenciar o carrinho
+- Por favor, inclua no README as instruções de instalação do projeto
+- Sinta-se livre para incluir quaisquer observações
+- Consuma nossa **API Rest** https://documenter.getpostman.com/view/10015622/UVJiiuHi#fe849253-c47a-492f-a860-08350296c570
 
-### Notes
+## 📋 Instruções React Native
 
-When wrapping a [Link](https://nextjs.org/docs/api-reference/next/link) from `next/link` within a styled-component, the [as](https://styled-components.com/docs/api#as-polymorphic-prop) prop provided by `styled` will collide with the Link's `as` prop and cause styled-components to throw an `Invalid tag` error. To avoid this, you can either use the recommended [forwardedAs](https://styled-components.com/docs/api#forwardedas-prop) prop from styled-components or use a different named prop to pass to a `styled` Link.
+Chegou a hora de colocar a mão na massa!
 
-<details>
-<summary>Click to expand workaround example</summary>
-<br />
+- Siga [esse protótipo](https://www.figma.com/file/gByBxI9GBHKUjXRtO2fFh2/28%2F10-%F0%9F%96%A5-%F0%9F%93%B1---Wine-Test---WEB-%26-APP?node-id=6847%3A2333)
+- Utilize Typescript
+- Faça a estilização com styled-components
+- Utilize o local storage para gerenciar o carrinho
+- Por favor, inclua no README as instruções de instalação do projeto
+- Sinta-se livre para incluir quaisquer observações
+- Consuma nossa **API Rest** https://documenter.getpostman.com/view/10015622/UVJiiuHi#fe849253-c47a-492f-a860-08350296c570
 
-**components/StyledLink.js**
+## ✔️ Critérios de Avaliação
 
-```javascript
-import Link from 'next/link'
-import styled from 'styled-components'
+Além dos requisitos levantados acima, iremos olhar para os seguintes critérios durante a correção do desafio:
 
-const StyledLink = ({ as, children, className, href }) => (
-  <Link href={href} as={as} passHref>
-    <a className={className}>{children}</a>
-  </Link>
-)
+- Gerenciamento de estado
+- Componentização
+- Responsividade
+- Preocupação com usabilidade
+- Preocupação com acessibilidade
+- Testes e2e
+- Padrões de código
+- Padrão de commits (_Conventional_)
 
-export default styled(StyledLink)`
-  color: #0075e0;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    color: #40a9ff;
-  }
-
-  &:focus {
-    color: #40a9ff;
-    outline: none;
-    border: 0;
-  }
-`
-```
-
-**pages/index.js**
-
-```javascript
-import StyledLink from '../components/StyledLink'
-
-export default () => (
-  <StyledLink href="/post/[pid]" forwardedAs="/post/abc">
-    First post
-  </StyledLink>
-)
-```
-
-</details>
+## 😎 Seria legal
+- Fazer deploy na vercel ou em outro local de sua preferência e disponibilizar um link de visualização 
+- Testes unitários
+- Utilização de cache do Next.js
+---
